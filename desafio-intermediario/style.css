@@ -1,38 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root {
-  --body-font: 'Staatliches' sans-serif;
-  --ff-texting: 'Palanquin', sans-serif;
+  --body-font: 'Staatliches';
+  --ff-texting: 'Palanquin';
 
   --hue-color: 250;
-  --body-color: hsl(var(--hue-color), 17%, 62%);
+  --body-color: hsl(217, 17%, 62%);
   --body-color-secund: hsl(var(--hue-color), 100%, 97%);
   --first-color: hsl(var(--hue-color), 17%, 35%);
   --title-color: hsl(var(--hue-color), 0%, 100%);
   --text-color: hsl(var(--hue-color), 84%, 12%);
+
+  font-size: 62.5%;
+  --fs-body: 1.6rem;
+  --fs-h1: 4rem;
+  --fs-p: 2rem;
 }
 
 body {
   font-family: var(--body-font);
 
   background-color: var(--body-color-secund);
-
-}
-
-body::before {
-  content: '';
-  width: 100%;
-  height: 279px;
-
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  background-color: var(--body-color);
+  font-size: var(--fs-body);
 }
 
 header {
-  font-family: var(--ff-texting);
+  font-family: var(--body-font);
+
+  height: 279px;
+  background-color: var(--body-color);
+
+  text-align: center;
+  
 }
 
-header p {
+header img {
+  padding-top: 32px;
+}
+
+main p {
+  font-family: var(--ff-texting);
+  font-size: var(--fs-p);
+  line-height: 1.5rem;
+  font-weight: 400;
+
+  padding-top: 14px;
+
   color: var(--text-color);
+}
+
+.subtitle {
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  padding: 14px 34px 63px 34px;
+}
+
+header h1 {
+  font-weight: 400;
+  font-size: var(--fs-h1);
+  line-height: 3.4rem;
+  letter-spacing: 0.05em;
+
+  background: #CBC0D3;
+
+  padding: 8px 86px;
+  margin-top: 14px;
+
+  color: var(--title-color);
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+}
+
+.pallets {
+  position: absolute;
+  z-index: 10;
+  top: 1.8rem;
+  left: 29rem;
+  height: 35px;
+  padding: 0 24px;
+
+  color: #4A4E69;
+  background-color: #FEEAFA;
+  border-radius: 20px;
+
+}
+
+.shake {
+  position: absolute;
+  z-index: 10;
+  top: 27.8rem;
+  left: 29rem;
+  height: 34px;
+  padding: 0 24px;
+
+  color: #4A4E69;
+  background-color: #FEEAFA;
+  border-radius: 20px;
+}
+
+.pasta {
+  position: absolute;
+  z-index: 10;
+  top: 72.8rem;
+  left: 29rem;
+  height: 35px;
+  padding: 0 24px;
+
+  color: #4A4E69;
+  background-color: #FEEAFA;
+  border-radius: 20px;
+}
+
+.pivot {
+  position: absolute;
+  z-index: 10;
+  top: 98.8rem;
+  left: 291px;
+  padding: 0 24px;
+
+  color: #4A4E69;
+  background-color: #FEEAFA;
+  border-radius: 20px;
 }
