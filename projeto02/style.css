@@ -12,6 +12,7 @@ body {
 }
 
 .nav {
+  font-family: "Mulish", sans-serif;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -76,13 +77,16 @@ a {
   color: white;
   text-transform: uppercase;
   font-family: 'Open Sans', sans-serif;
+
   background: #69B99D;
   border: 0;
   padding: 14px 32px 15px;
+
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
+  
   border-radius: 4px;
   cursor: pointer;
   width: 498px;
